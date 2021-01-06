@@ -47,7 +47,8 @@ a {
   color: #fff;
 }
 
-section {
+aside {
+  float: right;
 }
 
 .wrapper {
@@ -66,14 +67,15 @@ section {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 24px;
 }
+
 .header__nav {
   padding: 0px 0px 40px 0px;
 }
-.header__nav--link {}
+.header__nav--link {
+}
 
 .header__nav:first-child {}
 .header__nav--link:nth-child(2),.header__nav--link:last-child {
-  float: right;
   margin-left: 20px;
   color: rgba(255, 255, 255, 0.4);
 }
@@ -96,8 +98,7 @@ section {
   background: linear-gradient(253.6deg, #ED6387 0%, #FE5B00 100%);
 }
 
-.shop__block--empty {
-}
+.shop__block--empty {}
 
 .sanki__main--block ol {
   padding: 0px 16% 0px 17%;
@@ -105,7 +106,6 @@ section {
 
 .sanki__main--block h1 {
   padding: 48px 20px 18px 48px;
-  font-size: 64px;
   line-height: 97%;
   font-weight: 400;
   text-transform: uppercase;
@@ -118,8 +118,7 @@ section {
 }
 
 .main__block h1 {
-
-  font-size: 64px;
+  font-size: 58px;
   word-spacing: -30px;
 }
 
@@ -145,7 +144,6 @@ section {
 }
 
 .sanki__shop--aside {
-
   position: relative;
   right: 100px;
 
@@ -153,12 +151,9 @@ section {
   flex-direction: column;
 
   width: 280px;
-  min-height: 510px;
-  border-radius: 32px;
+  border-radius: 8px;
   margin: 8px;
   padding: 12px;
-
-  float: right;
 
   font-family: 'Rubik Mono One', sans-serif;
   font-weight: 400;
@@ -166,21 +161,25 @@ section {
   background: rgba(255, 255, 255, 0.04);
 }
 
+.ex {
+  padding: 10px;
+}
+
+.shop__aside--discount {
+  display: grid;
+  padding: 100px;
+  margin: 100px;
+  width: 280px;
+}
+
 .sanki__shop--aside p {
-  text-align: center;
-  font-weight: bold;
   color: rgba(255, 255, 255, 0.32);
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 32px;
-
-
 }
 
 .shop__aside--title {
-  width: 55%;
-  min-height: 100%;
+  color: #fff;
   text-align: center;
+
   padding: 8px 0px 20px 0px;
 }
 
@@ -191,10 +190,12 @@ section {
 }
 
 .shop__aside--order {
-  width: 100%;
-  min-height: 100px
+  display: flex;
+  flex-direction: row;
 
-  /*border: 1px solid #fff;*/
+  width: 100%;
+  min-height: 100px;
+
   /*border-top: 1px solid black;*/
   /*border-bottom: 1px solid black;*/
 }
@@ -218,7 +219,6 @@ section {
   margin: 0 auto;
   width: 100%;
   min-height: 50px;
-  /*border: 1px solid #fff;*/
   align-items: center;
 }
 
@@ -245,32 +245,23 @@ section {
 
 .order__name--price {
   display: flex;
-  flex-direction: column;
   width: 50%;
+  flex-direction: column;
   align-items: flex-end;
 }
 
-.block__order--sale-5 {
+.block__order--sale-5 {}
 
+.block__order--sale-10 {}
+
+.block__order--sale-15 {}
+
+.shop__aside--discount {
+  height: 72px;
+  font-family: 'Open Sans', sans-serif;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
 }
-
-.block__order--sale-10 {
-
-}
-
-.block__order--sale-15 {
-
-}
-
-/*.shop__block--order::before {
-  content: '';
-  border-top: 1px solid black;
-}
-
-.shop__block--order::after {
-  content: '';
-  border-top: 1px solid black;
-}*/
 
 .sanki__order--block {
   display: grid;
