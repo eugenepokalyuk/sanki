@@ -69,20 +69,43 @@ aside {
 }
 
 .header__nav {
+  display: flex;
+  flex-direction: row;
+  align-self: baseline;
+  align-items: center;
+  justify-content: flex-start;
   padding: 0px 0px 40px 0px;
 }
-.header__nav--link {
+
+.nav__left-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.nav__right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.nav__right-container a {
+  margin-left: 20px;  
 }
 
 .header__nav:first-child {}
-.header__nav--link:nth-child(2),.header__nav--link:last-child {
-  margin-left: 20px;
+.header__nav--link {
   color: rgba(255, 255, 255, 0.4);
 }
 
 .header__nav--link:hover {
   transition: 0.5s;
   color: #fff;
+}
+
+.nav__link--back::before {
+  content: '< '
 }
 
 .sanki__main--container {
@@ -192,12 +215,13 @@ aside {
 .shop__aside--order {
   display: flex;
   flex-direction: row;
+  align-self: center;
 
-  width: 100%;
+  width: 95%;
   min-height: 100px;
 
-  /*border-top: 1px solid black;*/
-  /*border-bottom: 1px solid black;*/
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0px;
 }
 
 .shop__aside--order h2, .shop__aside--order p {
@@ -216,10 +240,14 @@ aside {
 
 .shop__aside--summary {
   display: flex;
-  margin: 0 auto;
-  width: 100%;
+  flex-direction: row;
+  align-self: center;
+
+  width: 90%;
   min-height: 50px;
-  align-items: center;
+
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0px;
 }
 
 .shop__aside--summary h2, .shop__aside--summary p {
@@ -250,11 +278,44 @@ aside {
   align-items: flex-end;
 }
 
-.block__order--sale-5 {}
+.block__order--sale-5::before {
+  content: "-5% ";
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  margin: 8px;
 
-.block__order--sale-10 {}
+  color: #3BAA46;
+}
 
-.block__order--sale-15 {}
+.block__order--sale-10::before {
+  content: "-10% ";
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  margin: 8px;
+
+  color: #3BAA46;
+}
+
+.block__order--sale-15::before {
+  content: "-15% ";
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  margin: 8px;
+
+  color: #3BAA46;
+}
 
 .shop__aside--discount {
   height: 72px;
