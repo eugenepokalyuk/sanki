@@ -25,6 +25,7 @@ ol li {
 }
 
 ol li::before {
+  font-weight: 400;
   font-family: 'Rubik Mono One', sans-serif;
   content: counter(counter);
   color: #FD5C09;
@@ -59,6 +60,7 @@ section {
 }
 
 .sanki__nav--link {
+  font-weight: 400;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 24px;
 }
@@ -66,11 +68,17 @@ section {
   padding: 0px 0px 40px 0px;
 }
 .header__nav--link {}
+
 .header__nav:first-child {}
 .header__nav--link:nth-child(2),.header__nav--link:last-child {
   float: right;
-  padding-left: 20px;
+  margin-left: 20px;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.header__nav--link:hover {
+  transition: 0.5s;
+  color: #fff;
 }
 
 .sanki__main--container {
@@ -80,29 +88,35 @@ section {
 
 .sanki__main--block {
   display: flex;
-  max-width: 70%;
-  height: 510px;
-  background: linear-gradient(253.6deg, #ED6387 0%, #FE5B00 100%);
-  border-radius: 32px;
+  width: 70%;
   margin: 8px;
+  border-radius: 32px;
+  background: linear-gradient(253.6deg, #ED6387 0%, #FE5B00 100%);
 }
 
 .sanki__main--block ol {
-    padding: 0px 0px 0px 100px;
+  padding: 0px 0px 0px 100px;
 }
 
 .sanki__main--block h1 {
+
+
+  padding: 48px 48px 18px 48px;
   font-size: 64px;
   line-height: 97%;
-  font-family: 'Rubik Mono One', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: 'Rubik Mono One', sans-serif;
   color: #fff;
-  padding: 48px 48px 18px 48px;
 }
 
 .main__block {
+  display: flex;
   align-items: center;
+}
+
+.main__block h1 {
+
 }
 
 .main__block:nth-child(1) {
@@ -127,6 +141,7 @@ section {
   background: rgba(255, 255, 255, 0.04);
   border-radius: 32px;
   margin: 8px;
+  font-weight: 400;
   font-family: 'Rubik Mono One', sans-serif;
 }
 
@@ -146,15 +161,17 @@ section {
   background: #fff;
   border-radius: 32px;
   margin: 8px;
+
 }
 
 .order__block {
+  font-family: 'Rubik Mono One', sans-serif;
   margin: 32px 48px;
 }
 
 .order__block h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -219,5 +236,6 @@ section {
 }
 
 .addbtn__style:hover {
+  transition: 0.5s;
   background: #0082cc;
 }
