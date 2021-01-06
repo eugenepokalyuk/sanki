@@ -1,0 +1,223 @@
+*, *:before, *:after {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+html, body {
+  background-color: #222222;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+ol {
+  counter-reset: counter;
+  list-style: none;
+}
+ol li {
+  counter-increment: counter;
+  position: relative;
+  color: #fff;
+  padding: 12px;
+}
+
+ol li::before {
+  font-family: 'Rubik Mono One', sans-serif;
+  content: counter(counter);
+  color: #FD5C09;
+  position: absolute;
+  --size: 40px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+
+.sanki__nav--link {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 24px;
+}
+.header__nav {
+  padding: 0px 0px 40px 0px;
+}
+.header__nav--link {}
+.header__nav:first-child {}
+.header__nav--link:nth-child(2),.header__nav--link:last-child {
+  float: right;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.sanki__main--container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sanki__main--block {
+  display: flex;
+  max-width: 70%;
+  height: 510px;
+  background: linear-gradient(253.6deg, #ED6387 0%, #FE5B00 100%);
+  border-radius: 32px;
+  margin: 8px;
+}
+
+.sanki__main--block ol {
+    padding: 0px 0px 0px 100px;
+}
+
+.sanki__main--block h1 {
+  font-size: 64px;
+  line-height: 97%;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 48px 48px 18px 48px;
+}
+
+.main__block {
+  align-items: center;
+}
+
+.main__block:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__block:nth-child(2) {
+  display: flex;
+  margin-right: -70px;
+}
+
+.sanki__main--image {
+  border-radius: 50%;
+}
+
+.sanki__shop--block {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 510px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 32px;
+  margin: 8px;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.sanki__shop--block p {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.32);
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.sanki__order--block {
+  display: grid;
+  max-width: 70%;
+  background: #fff;
+  border-radius: 32px;
+  margin: 8px;
+}
+
+.order__block {
+  margin: 32px 48px;
+}
+
+.order__block h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order__block--items {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+}
+
+.order__block--items:nth-child(2n+1) {
+  background: rgba(196, 196, 196, 0.16);
+}
+.order__block--items:last-child {
+  border-radius: 0px 0px 32px 32px;
+}
+
+.order__block--items h2, p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 4px;
+}
+
+.order__block--items p {
+  color: #999999;
+}
+
+.order__block--icon {
+  width: 120px;
+  height: 120px;
+  background-color: #C4C4C4;
+  border-radius: 20px;
+}
+
+.order__block--cost {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 133%;
+  color: #222222;
+  width: 40%;
+  text-align: center;
+}
+
+.order__block--addbtn {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 133%;
+  color: #FFFFFF;
+  width: 30%;
+  text-align: center;
+}
+
+.addbtn__style {
+  display: flex;
+  padding: 8px 16px 10px;
+  width: 117px;
+  height: 42px;
+  background: #00A3FF;
+  border-radius: 8px;
+}
+
+.addbtn__style:hover {
+  background: #0082cc;
+}
